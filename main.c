@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "Processos/RoundRobin/FIFO.h"
-#include "Processos/RoundRobin/ROUND_ROBIN.h"
+#include "processos/src/fifo/FIFO.h"
+#include "processos/RoundRobin/ROUND_ROBIN.h"
 
 int main()
 {

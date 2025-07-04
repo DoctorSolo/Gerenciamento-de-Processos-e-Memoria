@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-#include "fifo.h"
+
+#include "../src/fifo/FIFO.h"
 #include "ROUND_ROBIN.h"
 
 
