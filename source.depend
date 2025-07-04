@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1751651852 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\main.c
+1751670923 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
-	"Processos/RoundRobin/FIFO.h"
-	"Processos/RoundRobin/ROUND_ROBIN.h"
+	"processos/src/fifo/FIFO.h"
+	"processos/RoundRobin/ROUND_ROBIN.h"
+	"processos/FCFS/FCFS.h"
 
 1751588237 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\main.c
 	<stdio.h>
@@ -28,18 +29,33 @@
 	<windows.h>
 	"fifo.h"
 
-1751649886 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\fcfs.c
+1751670860 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\fcfs.c
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
+	"../src/fifo/FIFO.h"
+	"../src/processos/PROCESSOS.h"
 
 1751651757 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\round_robin.h
 
-1751651991 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\roundrobin.c
+1751666360 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\roundrobin.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<unistd.h>
-	"fifo.h"
+	"../src/fifo/FIFO.h"
 	"ROUND_ROBIN.h"
+
+1751668862 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\fifo\fifo.h
+	"../processos/PROCESSOS.h"
+
+1751666036 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\processos\processos.h
+
+1751668845 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\fifo\fifo.c
+	<stdio.h>
+	<windows.h>
+	"FIFO.h"
+	"../processos/PROCESSOS.h"
+
+1751668223 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\fcfs.h
 

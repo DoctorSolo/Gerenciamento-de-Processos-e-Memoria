@@ -31,23 +31,25 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Processos/FCFS/FCFS.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Processos/RoundRobin/FIFO.h" />
-		<Unit filename="Processos/RoundRobin/ROUND_ROBIN.h" />
-		<Unit filename="Processos/RoundRobin/RoundRobin.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Processos/RoundRobin/fifo.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Processos/SJF/SJF.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="processos/FCFS/FCFS.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="processos/FCFS/FCFS.h" />
+		<Unit filename="processos/RoundRobin/ROUND_ROBIN.h" />
+		<Unit filename="processos/RoundRobin/RoundRobin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="processos/SJF/SJF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="processos/src/fifo/FIFO.h" />
+		<Unit filename="processos/src/fifo/fifo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="processos/src/processos/PROCESSOS.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

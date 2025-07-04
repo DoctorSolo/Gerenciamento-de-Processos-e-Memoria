@@ -1,16 +1,11 @@
+#include "../processos/PROCESSOS.h"
+
+
 #ifndef FIFO_H_INCLUDED
 #define FIFO_H_INCLUDED
 
-#define MAX 5
 
-typedef struct {
-    int id_processo;
-    float tempo_restante;
-} Processo;
-
-
-
-
+#define MAX 10
 
 // Essa será nossa fila, ela é circular e trabalharemos
 // com ponteiros. Variavel inicio e final recebera os
@@ -18,9 +13,7 @@ typedef struct {
 // ira ser o que vai controlar se a fila esta cheia ou não.
 typedef struct {
     Processo elementos[MAX];
-    int inicio;
-    int fim;
-    int quantidade;
+    int inicio, fim, quantidade;
 } FILA;
 
 
