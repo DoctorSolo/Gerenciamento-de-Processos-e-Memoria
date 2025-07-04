@@ -60,6 +60,7 @@ void enqueue(CircularQueue *q, timeRelatedFunction item)
 }
 
 
+
 timeRelatedFunction dequeue(CircularQueue *q)
 {
     if (isEmpty(q)){
@@ -93,7 +94,7 @@ void showQueue(CircularQueue *q)
     printf("\n");
 }
 
-
+/*
 int main()
 {
     CircularQueue queue01;
@@ -113,7 +114,7 @@ int main()
     dequeue(&queue01);
     showQueue(&queue01);
 }
-
+*/
 
 
 

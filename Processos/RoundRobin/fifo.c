@@ -2,56 +2,76 @@
 #include <windows.h>
 #include "fifo.h"
 
-void inicializarFila(FILA *f) {
-    f->inicio = 0;
-    f->fim = 0;
-    f->quantidade;
+
+
+Processo ProcessoNull() {
+    Processo p = {-1, -1.0};
+    return p;
 }
 
+
+
+
+// Metodo usado para iniciar os ponteiros
+// da fila e a variavel de quantidade.
+void inicializarFila(FILA *f) {
+    f->inicio     = 0;
+    f->fim        = -1;
+    f->quantidade = 0;
+}
+
+
+// Verifica se a fila está cheia, se estiver
+// retorna 1 caso contrario, vai retornar 0.
 int estaCheia(FILA *f) {
     return f->quantidade == MAX;
 }
 
+
+// Verifica se a fila está vazia, caso esteja
+// retorna 1 e reinicia os valores, e o contrario retorna 0.
 int estaVazia(FILA *f) {
+    inicializarFila(f);
     return f->quantidade == 0;
 }
 
+
+// Este metodo é o responsável por enfileirar os processos,
 void enfileirar(FILA *f, Processo p) {
+
+    // Este loop serve para evitar que o processo se perca,
+    // então ele ira entrar em espera.
     while(estaCheia(f)){
-        Sleep(10);// Evita a perda do processo fazendo com que entre em espera
+        Sleep(10);
     }
 
-    f->elementos[f->fim] = p;
+    // Verifica se está vazia para fazer o remanegamento
+    // dos valores.
+    if (estaVazia(f));
+
+    // Adiciona o elemento no final da fila
+    // e mostra os resultados.
     f->fim = (f->fim + 1) % MAX;
+    f->elementos[f->fim] = p;
     f->quantidade++;
 
     printf("Processo [%d] re-enfileirado com tempo restante: %.2fs\n", p.id_processo, p.tempo_restante);
-    return 1;
 }
 
+
+// Este metodo é responsavel por tirar o primeiro da fila.
 Processo desenfileirar(FILA *f) {
+
+    // Este metodo é responsavel por impedir erro no codigo,
+    // caso a fila estiver vazia.
+    if (estaVazia(f)){
+        printf("A fila está vazia!");
+        return ProcessoNull();
+    }
+
+    // inicio da fila caminha +1 na lista.
     Processo p = f->elementos[f->inicio];
     f->inicio = (f->inicio + 1) % MAX;
     f->quantidade--;
     return p;
 }
-
-void simularRoundRobin(FILA *f) {
-    while (!estaVazia(f)) {
-        Processo p = desenfileirar(f);
-
-        if (p.tempo_restante <= QUANTUM) {
-            printf("Processo [%d] executando por %.2fs (finalizado)\n", p.id_processo, p.tempo_restante);
-            Sleep((int)(p.tempo_restante * 1000));
-        } else {
-            printf("Processo [%d] executando por %.2fs (resta %.2fs)\n", p.id_processo, QUANTUM, p.tempo_restante - QUANTUM);
-            Sleep((int)(QUANTUM * 1000));
-            p.tempo_restante -= QUANTUM;
-
-            enfileirar(f, p);  // sempre tentará reaproveitar o espaço circular
-        }
-    }
-
-    printf("Todos os processos foram finalizados!\n");
-}
-
