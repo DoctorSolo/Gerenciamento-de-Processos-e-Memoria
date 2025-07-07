@@ -4,7 +4,7 @@
 #ifndef FIFO_H_INCLUDED
 #define FIFO_H_INCLUDED
 
-
+// Capacidade maxima da fila circular
 #define MAX 10
 
 // Essa será nossa fila, ela é circular e trabalharemos
@@ -16,7 +16,7 @@ typedef struct {
     int inicio, fim, quantidade;
 } FILA;
 
-
+// Funcoes basicas para serem usadas em outros arquivos
 void inicializarFila(FILA *f);
 int estaCheia(FILA *f);
 int estaVazia(FILA *f);

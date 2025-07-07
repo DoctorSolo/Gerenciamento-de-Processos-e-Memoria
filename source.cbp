@@ -45,6 +45,7 @@
 		<Unit filename="processos/SJF/SJF.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="processos/SJF/SJF.h" />
 		<Unit filename="processos/src/fifo/FIFO.h" />
 		<Unit filename="processos/src/fifo/fifo.c">
 			<Option compilerVar="CC" />

@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1751670923 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\main.c
+1751931029 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"processos/src/fifo/FIFO.h"
 	"processos/RoundRobin/ROUND_ROBIN.h"
 	"processos/FCFS/FCFS.h"
+	"processos/SJF/SJF.h"
 
 1751588237 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\main.c
 	<stdio.h>
@@ -29,33 +30,38 @@
 	<windows.h>
 	"fifo.h"
 
-1751670860 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\fcfs.c
+1751926611 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\fcfs.c
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
+	<windows.h>
 	"../src/fifo/FIFO.h"
 	"../src/processos/PROCESSOS.h"
 
-1751651757 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\round_robin.h
+1751926547 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\round_robin.h
 
-1751666360 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\roundrobin.c
+1751926475 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\roundrobin.c
 	<stdio.h>
 	<stdlib.h>
+	<windows.h>
 	<time.h>
 	<unistd.h>
 	"../src/fifo/FIFO.h"
 	"ROUND_ROBIN.h"
 
-1751668862 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\fifo\fifo.h
+1751926117 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\fifo\fifo.h
 	"../processos/PROCESSOS.h"
 
-1751666036 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\processos\processos.h
+1751926522 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\processos\processos.h
 
-1751668845 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\fifo\fifo.c
+1751926947 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\src\fifo\fifo.c
 	<stdio.h>
 	<windows.h>
 	"FIFO.h"
 	"../processos/PROCESSOS.h"
 
-1751668223 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\fcfs.h
+1751926645 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\fcfs.h
+
+1751930924 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\sjf\sjf.h
+	"../src/fifo/FIFO.h"
 

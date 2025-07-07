@@ -7,7 +7,8 @@
 // Funcao para retornar algo caso,
 // a fila esteja vazia
 Processo ProcessoNull() {
-    return {-1, 0.0};
+    Processo p = {-1, 0.0};
+    return p;
 }
 
 
@@ -23,7 +24,7 @@ void inicializarFila(FILA *f) {
 // Verifica se a fila está cheia, se estiver
 // retorna 1 caso contrario, vai retornar 0.
 int estaCheia(FILA *f) {
-    return f->quantidade == MAX-1;
+    return f->quantidade == MAX;
 }
 
 
@@ -41,7 +42,7 @@ void enfileirar(FILA *f, Processo p) {
     // então ele ira entrar em espera.
     while(estaCheia(f)){
         printf("A fila esta cheia!\n");
-        //Sleep(10);
+        Sleep(10);
         return;
     }
 
