@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "FITS.h"
+#include "../../processos/src/fifo/FIFO.h"
+#include "../../processos/src/processos/PROCESSOS.h"
 
-int main() {
+
+void simularParticionamento() {
     // ==============================================
     // SIMULAÇÃO DE PARTICIONAMENTO CONTÍGUO
     // ==============================================
@@ -16,7 +19,7 @@ int main() {
     inicializar_particoes(particoes, TAM_MEMORIA);
 
     // Define os processos que serão alocados (ID e tamanho)
-    Processo processos[NUM_PROCESSOS] = {
+    ProcessoMemoria processos[NUM_PROCESSOS] = {
         {1, 30}, // Processo 1 precisa de 30 blocos
         {2, 20}, // Processo 2 precisa de 20 blocos
         {3, 40}, // Processo 3 precisa de 40 blocos
@@ -94,8 +97,6 @@ int main() {
 
     // Mostra apenas os primeiros 30 quadros para facilitar visualização
     imprimir_tabela_paginas(quadros, 30);
-
-    return 0;
 }
 
 // ==============================================

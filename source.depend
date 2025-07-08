@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1751931029 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\main.c
+1752011456 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -7,6 +7,7 @@
 	"processos/RoundRobin/ROUND_ROBIN.h"
 	"processos/FCFS/FCFS.h"
 	"processos/SJF/SJF.h"
+	"MemÃ³rias/First-Best-Worst-Fit/FITS.h"
 
 1751588237 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\main.c
 	<stdio.h>
@@ -21,9 +22,12 @@
 
 1751652977 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\fifo.h
 
-1751648528 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\sjf\sjf.c
+1751931717 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\sjf\sjf.c
 	<stdio.h>
 	<stdlib.h>
+	<windows.h>
+	"../src/processos/PROCESSOS.h"
+	"../src/fifo/FIFO.h"
 
 1751588012 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\roundrobin\fifo.c
 	<stdio.h>
@@ -62,6 +66,16 @@
 
 1751926645 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\fcfs\fcfs.h
 
-1751930924 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\sjf\sjf.h
+1751931750 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\processos\sjf\sjf.h
 	"../src/fifo/FIFO.h"
+
+1752011376 source:c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\memórias\first-best-worst-fit\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FITS.h"
+
+1752011400 c:\users\miguel\workspace\pessoal\c\gerenciamento-de-processos-e-memoria\memórias\first-best-worst-fit\fits.h
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
 

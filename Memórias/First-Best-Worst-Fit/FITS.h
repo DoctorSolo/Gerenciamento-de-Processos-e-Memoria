@@ -19,13 +19,15 @@ typedef struct {
 typedef struct {
     int id;
     int tamanho;
-} Processo;
+} ProcessoMemoria;
 
 // Estruturas para Paginação
 typedef struct {
     int id_processo;
     int pagina;
 } Quadro;
+
+void simularParticionamento();
 
 // Funções para Particionamento Contíguo
 void inicializar_particoes(Particao particoes[], int tamanho_memoria);

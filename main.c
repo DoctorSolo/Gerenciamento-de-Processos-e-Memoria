@@ -5,7 +5,7 @@
 #include "processos/RoundRobin/ROUND_ROBIN.h"
 #include "processos/FCFS/FCFS.h"
 #include "processos/SJF/SJF.h"
-
+#include "Memórias/First-Best-Worst-Fit/FITS.h"
 
 // Metodo para criar os processos para texte
 void criarProcessos(FILA *f)
@@ -64,6 +64,10 @@ int main()
     // SJF
     printf("\nSJF\n");
     SJF_Shortest_Job_First(&c);
+
+    // Particionamentos
+    printf("\nParticionamentos\n");
+    simularParticionamento();
 
     return 0;
 }
