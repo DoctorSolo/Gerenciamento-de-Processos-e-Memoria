@@ -1,5 +1,7 @@
 <h3 align=center>Algoritmo de Gerenciamento de Processos em C</h3>
 
+<hr>
+
 <h6>Autores:</h6>
 
  * [DoctorSolo](https://github.com/DoctorSolo)
@@ -14,4 +16,4 @@ Simulamos processos nesses algoritmos e observamos quais processos levam mais e 
 
 ![grafico](Document/GraficosProcessos.png)
 
-Para mais detalhes da implementação do algoritmo FBWF, considere ler o [relatorio](Document/First-Best-Worst-Fits-Relatório.md) do algoritmo!
+Para mais detalhes da implementação do algoritmo FBWF e gerenciamento de memoria, considere ler o [relatorio](Document/First-Best-Worst-Fits-Relatório.md) do algoritmo e o [relatorio](Document/Relatorio_Gerenciamento_Processos_Memoria.pdf) de gerenciamento de memoria!
