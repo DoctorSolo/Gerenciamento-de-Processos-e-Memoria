@@ -16,4 +16,16 @@ Simulamos processos nesses algoritmos e observamos quais processos levam mais e 
 
 ![grafico](Document/GraficosProcessos.png)
 
-Para mais detalhes da implementação do algoritmo FBWF e gerenciamento de memoria, considere ler o [relatorio](Document/First-Best-Worst-Fits-Relatório.md) do algoritmo e o [relatorio](Document/Relatorio_Gerenciamento_Processos_Memoria.pdf) de gerenciamento de memoria!
+>Legenda:
+>
+>>   Série1: RoundRobin
+>>
+>>  Série2: FCFS
+>>
+>>   Série3: SJF
+
+Para mais detalhes da implementação do algoritmo FBWF e gerenciamento de memoria, considere ler o [RELATORIO](Document/First-Best-Worst-Fits-Relatório.md) do algoritmo e o [RELATORIO/DOCUMENTAÇÂO](Document/Relatorio_Gerenciamento_Processos_Memoria.pdf) de gerenciamento de memoria!
+
+<hr>
+
+Considere ler o [RELATORIO/DOCUMENTAÇÂO](Document/Relatorio_Gerenciamento_Processos_Memoria.pdf) caso queira saber mais sobre a dificuldade de implementação desses tipos de algoritmos, e desafios superados.
